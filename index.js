@@ -332,8 +332,8 @@ function sendEmail(shelterName, shelterAddress, groupId, address, evacuees){
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: 'aitemir.yeskenov@outlook.com', // generated ethereal user
-        pass: '150396270490Asd'  // generated ethereal password
+        user: 'email@outlook.com', // generated ethereal user
+        pass: 'password'  // generated ethereal password
     },
     tls:{
       rejectUnauthorized:false
@@ -341,7 +341,7 @@ function sendEmail(shelterName, shelterAddress, groupId, address, evacuees){
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Hillsborough County" <aitemir.yeskenov@outlook.com>', // sender address
+        from: '"Hillsborough County" <email@outlook.com>', // sender address
         to: evacuees[0].Email, // list of receivers
         subject: 'Shelter Registration', // Subject line
         text: 'Plain text', // plain text body
